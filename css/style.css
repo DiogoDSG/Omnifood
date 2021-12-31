@@ -36,6 +36,10 @@ Default: 1
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1;
