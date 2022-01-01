@@ -6,9 +6,15 @@
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
 - Font weights 
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
 
 - Line heights
 Default: 1
+Small: 1.05
+Paragraph default: 1.6
 
 --- 02 COLORS
 -Primary: #e67e22
@@ -22,6 +28,7 @@ Default: 1
 --- 05 SHADOWS
 
 --- 06 BORDER-RADIUS
+default: 9px
 
 --- 07 WHITESPACE
 
@@ -113,6 +120,45 @@ body {
 
 .logo {
   height: 2.2rem;
+}
+
+/********************************************/
+/* NAVIGATION */
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link:any-link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.nav-cta:any-link,
+.main-nav-link.nav-cta:visited {
+  display: inline-block;
+  background-color: #e67e22;
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
 }
 
 /********************************************/
